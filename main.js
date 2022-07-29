@@ -1,8 +1,8 @@
 var myName = "shay ";
 var lastName = "Lousky";
 
-var num1 = prompt("Enter first number : ");
-var num2 = prompt("Enter second number : ");
+var num1 = +prompt("Enter first number : ");
+var num2 = +prompt("Enter second number : ");
 
 // console.log("SHOW NUM2 : ", num2);
 
@@ -13,7 +13,7 @@ var bool;
 //bool = parameter from server
 // == , != , < , > , <= , >=
 
-if (num1 < num2) {
+if (Number(num1) < Number(num2)) {
 	console.log("Yes");
 } else {
 	console.log("No");
